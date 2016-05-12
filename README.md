@@ -5,7 +5,7 @@ Home: http://www.mkdocs.org
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Project documentation with Markdown
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mkdocs-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/mkdocs-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/mkdocs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mkdocs-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mkdocs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mkdocs-feedstock/branch/master)
