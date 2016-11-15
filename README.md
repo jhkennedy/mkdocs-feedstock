@@ -3,11 +3,11 @@ About mkdocs
 
 Home: http://www.mkdocs.org
 
-Package license: BSD-2-Clause
+Package license: BSD 2-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Project documentation with Markdown
+Summary: Project documentation with Markdown.
 
 
 
@@ -31,7 +31,6 @@ It is possible to list all of the versions of `mkdocs` available on your platfor
 ```
 conda search mkdocs --channel conda-forge
 ```
-
 
 
 About conda-forge
