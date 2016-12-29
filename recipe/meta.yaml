@@ -1,4 +1,4 @@
-{% set version = "0.16.0" %}
+{% set version = "0.16.1" %}
 
 package:
   name: mkdocs
@@ -7,7 +7,7 @@ package:
 source:
   fn: mkdocs-{{ version }}.tar.gz
   url: https://github.com/mkdocs/mkdocs/archive/{{ version }}.tar.gz
-  sha256: ff0108563ce8a33f4a0bc1f99e9817bd5cab2c9532f8a5ff272beba864066381
+  sha256: b665679d7c6da47e734a00e89f823e478cc57389ffeb49266de68a804f803f83
 
 build:
   number: 0
