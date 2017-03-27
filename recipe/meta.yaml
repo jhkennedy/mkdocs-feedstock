@@ -1,4 +1,4 @@
-{% set version = "0.16.1" %}
+{% set version = "0.16.2" %}
 
 package:
   name: mkdocs
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: mkdocs-{{ version }}.tar.gz
-  url: https://github.com/mkdocs/mkdocs/archive/{{ version }}.tar.gz
-  sha256: b665679d7c6da47e734a00e89f823e478cc57389ffeb49266de68a804f803f83
+  url: https://pypi.io/packages/source/m/mkdocs/mkdocs-{{ version }}.tar.gz
+  sha256: 0b9531be052cc36e1973c3f87f39f85c5bf24d356211db2bbd068255466ec621
 
 build:
   number: 0
@@ -49,6 +49,7 @@ test:
 about:
   home: http://www.mkdocs.org
   license: BSD 2-Clause
+  license_file: LICENSE
   summary: 'Project documentation with Markdown.'
 
 extra:
