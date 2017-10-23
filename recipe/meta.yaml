@@ -1,18 +1,17 @@
-{% set version = "0.16.3" %}
+{% set version = "0.17.0" %}
 
 package:
   name: mkdocs
   version: {{ version }}
 
 source:
-  fn: mkdocs-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/mkdocs/mkdocs-{{ version }}.tar.gz
-  sha256: ac0ac5313dbbf0973ac254b9697f2ab6935cf31bc7fd76432875db166d03367d
+  sha256: 78792dbd55ece776be4650912644f667d9c224734e434e364b399c551d46ff29
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
-  preserve_egg_dir: True
   entry_points:
     - mkdocs = mkdocs.__main__:cli
 
@@ -24,10 +23,8 @@ requirements:
     - python
     - click >=3.3
     - jinja2 >=2.7.1
-    - livereload >=2.3.2
+    - livereload >=2.5.1
     - markdown >=2.3.1
-    - mkdocs-bootstrap >=0.1.1
-    - mkdocs-bootswatch >=0.1.0
     - pyyaml >=3.10
     - tornado >=4.1
 
