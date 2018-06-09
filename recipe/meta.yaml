@@ -1,4 +1,4 @@
-{% set version = "0.17.3" %}
+{% set version = "0.17.4" %}
 
 package:
   name: mkdocs
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs/mkdocs-{{ version }}.tar.gz
-  sha256: 126e9b871adeb077facccc375066fddae1485c7deebe3f10f2052b9a15514fb9
+  sha256: 8ac2bacccb21ad9b824121bbed5f97e1eb6635323726cf300e7ca6410bd5f5b0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
