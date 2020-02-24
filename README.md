@@ -3,11 +3,11 @@ About mkdocs
 
 Home: http://www.mkdocs.org
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Project documentation with Markdown.
+Summary: Project documentation with Markdown
 
 
 
