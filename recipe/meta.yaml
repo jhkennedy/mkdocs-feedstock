@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "1.1" %}
 
 package:
   name: mkdocs
@@ -6,35 +6,46 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs/mkdocs-{{ version }}.tar.gz
-  sha256: 17d34329aad75d5de604b9ed4e31df3a4d235afefdc46ce7b1964fddb2e1e939
+  sha256: 9243291392f59e20b655e4e46210233453faf97787c2cf72176510e868143174
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - mkdocs = mkdocs.__main__:cli
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
     - click >=3.3
-    - jinja2 >=2.7.1
+    - jinja2 >=2.10.1
     - livereload >=2.5.1
-    - markdown >=2.3.1
+    - lunr ==0.5.6
+    # lunr[languages]
+    - nltk >=3.2.5
+    - markdown >=3.2.1
     - pyyaml >=3.10
     - tornado >=5.0
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - mkdocs
     - mkdocs.commands
     - mkdocs.config
+    - mkdocs.contrib
+    - mkdocs.contrib.search
+    - mkdocs.structure
     - mkdocs.tests
     - mkdocs.tests.config
+    - mkdocs.tests.structure
     - mkdocs.tests.utils
     - mkdocs.themes
     - mkdocs.themes.mkdocs
@@ -45,9 +56,9 @@ test:
 
 about:
   home: http://www.mkdocs.org
-  license: BSD 2-Clause
+  license: BSD-2-Clause
   license_file: LICENSE
-  summary: 'Project documentation with Markdown.'
+  summary: 'Project documentation with Markdown'
 
 extra:
   recipe-maintainers:
