@@ -1,4 +1,4 @@
-{% set version = "1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: mkdocs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs/mkdocs-{{ version }}.tar.gz
-  sha256: 9243291392f59e20b655e4e46210233453faf97787c2cf72176510e868143174
+  sha256: f0b61e5402b99d7789efa032c7a74c90a20220a9c81749da06dbfbcbd52ffb39
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - click >=3.3
     - jinja2 >=2.10.1
     - livereload >=2.5.1
-    - lunr ==0.5.6
+    - lunr ==0.5.8
     # lunr[languages]
     - nltk >=3.2.5
     - markdown >=3.2.1
