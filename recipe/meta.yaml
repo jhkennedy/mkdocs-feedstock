@@ -34,8 +34,6 @@ requirements:
 test:
   requires:
     - pip
-  commands:
-    - pip check
   imports:
     - mkdocs
     - mkdocs.commands
@@ -52,6 +50,7 @@ test:
     - mkdocs.themes.readthedocs
     - mkdocs.utils
   commands:
+    - pip check
     - mkdocs --help
 
 about:
