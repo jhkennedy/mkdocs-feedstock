@@ -1,4 +1,4 @@
-{% set version = "1.1.2" %}
+{% set version = "1.2.1" %}
 
 package:
   name: mkdocs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs/mkdocs-{{ version }}.tar.gz
-  sha256: f0b61e5402b99d7789efa032c7a74c90a20220a9c81749da06dbfbcbd52ffb39
+  sha256: 6e0ea175366e3a50d334597b0bc042b8cebd512398cdd3f6f34842d0ef524905
 
 build:
   number: 0
@@ -57,7 +57,7 @@ about:
   home: http://www.mkdocs.org
   license: BSD-2-Clause
   license_file: LICENSE
-  summary: 'Project documentation with Markdown'
+  summary: Project documentation with Markdown
 
 extra:
   recipe-maintainers:
