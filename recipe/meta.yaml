@@ -1,4 +1,4 @@
-{% set version = "1.2.4" %}
+{% set version = "1.3.0" %}
 
 package:
   name: mkdocs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/mkdocs/mkdocs-{{ version }}.tar.gz
-  sha256: 8e7970a26183487fe2a1041940c6fd03aa0dbe5549e50c3e7194f565cb3c678a
+  sha256: b504405b04da38795fec9b2e5e28f6aa3a73bb0960cb6d5d27ead28952bd35ea
 
 build:
   number: 0
