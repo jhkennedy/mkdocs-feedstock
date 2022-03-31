@@ -8,7 +8,7 @@ just a test..
 EOT
 cat <<'EOT' > /tmp/test_mkdocs_build/mkdocs.yml
 site_name: mkdocs
-pages:
+nav:
 - 'Home': 'index.md'
 EOT
 
